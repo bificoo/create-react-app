@@ -103,4 +103,25 @@ module.exports = {
             filename: devMode ? "assets/styles/main.css" : "assets/styles/main.[hash].css"
         })
     ],
+    optimization: {
+        splitChunks: {
+            chunks: "all",
+            cacheGroups: {
+                vendors: {
+                    test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
+                    name: "vendors",
+                    chunks: "all",
+                },
+                commons: {
+                    name: "commons",
+                    chunks: "initial",
+                    minChunks: 2
+                }
+            }
+        }
+    },
+    performance: {
+        hints: false
+    },
+    devtool: devMode ? "cheap-module-source-map" : "nosources-source-map",
 };
