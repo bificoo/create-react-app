@@ -26,6 +26,7 @@ yarn build
 * [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env)：轉譯js兼容至指定環境。
 * [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react)：轉譯react/jsx。
 * [@babel/plugin-proposal-class-properties](https://www.npmjs.com/package/@babel/plugin-proposal-class-properties)
+* [babel-eslint](https://www.npmjs.com/package/babel-eslint)
 * [babel-loader](https://www.npmjs.com/package/babel-loader)：js預處理器。
 
 #### React
@@ -39,3 +40,9 @@ yarn build
 * [sass-loader](https://www.npmjs.com/package/sass-loader)：轉譯sass。
 * [node-sass](https://www.npmjs.com/package/node-sass)：sass api。
 * [mini-css-extract-plugin](https://www.npmjs.com/package/mini-css-extract-plugin)：webpack4才能用，將樣式抽離獨立。
+
+#### ESLint
+* [eslint](https://www.npmjs.com/package/eslint)：(>=6.14), npm version 3+，js檢查工具。
+* [eslint-loader](https://www.npmjs.com/package/eslint-loader)：eslint預處理器。
+* [eslint-plugin-babel](https://www.npmjs.com/package/eslint-plugin-babel)：babel檢查工具。
+* [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)：react檢查工具。
