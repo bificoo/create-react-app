@@ -1,0 +1,28 @@
+{
+    "name": "create-react-app",
+    "version": "1.0.0",
+    "description": "Use webpack4/react16 create app.",
+    "main": "index.js",
+    "scripts": {
+        "start": "webpack --mode development",
+        "build": "webpack --mode production",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bificoo/create-react-app.git"
+    },
+    "keywords": [
+        "webpack4",
+        "react16"
+    ],
+    "author": "bificoo",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/bificoo/create-react-app/issues"
+    },
+    "devDependencies": {
+        "webpack": "^4.30.0",
+        "webpack-cli": "^3.3.1"
+    }
+}
