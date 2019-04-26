@@ -56,6 +56,29 @@ module.exports = {
                     }
                 }]
             },
+            {
+                test: /\.(jpg|png|woff|woff2|eot|ttf|svg)$/,
+                loader: "url-loader",
+                options: {
+                    limit: 8192
+                }
+            },
+            {
+                test: /\.(jpg|png|svg)$/,
+                loader: "file-loader",
+                options: {
+                    limit: 8192,
+                    name: "/assets/images/[name].[ext]"
+                }
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf)$/,
+                loader: "file-loader",
+                options: {
+                    limit: 8192,
+                    name: "/assets/fonts/[name].[ext]"
+                }
+            },
         ]
     },
     resolve: {

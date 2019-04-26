@@ -46,3 +46,7 @@ yarn build
 * [eslint-loader](https://www.npmjs.com/package/eslint-loader)：eslint預處理器。
 * [eslint-plugin-babel](https://www.npmjs.com/package/eslint-plugin-babel)：babel檢查工具。
 * [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)：react檢查工具。
+
+#### Static Resource
+* [url-loader](https://www.npmjs.com/package/url-loader)：將靜態資源載入，視檔案大小可以轉為base64。
+* [file-loader](https://www.npmjs.com/package/file-loader)：將靜態資源載入，導出為檔案。
