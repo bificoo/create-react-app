@@ -11,6 +11,23 @@ module.exports = {
         path: path.resolve(__dirname, './dist'),
         filename: 'scripts/main.js'
     },
+    module: {
+        rules: [
+            {
+                test: /\.(js|jsx)$/,
+                include: [path.resolve(__dirname, "src")],
+                exclude: /node_modules/,
+                loader: "babel-loader"
+            },
+        ]
+    },
+    resolve: {
+        extensions: [".js", ".jsx", ".json"],
+        modules: [
+            "node_modules",
+            path.resolve(__dirname, "src/")
+        ],
+    },
     plugins: [
         new HtmlWebpackPlugin({
             title: "Create React App",
