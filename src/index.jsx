@@ -1,10 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Header from "modules/Header";
 import "./style.sass";
 
 const Application = () => {
     return (
-        <article>Create React App</article>
+        <article>
+            <Header />
+            Hi, i am bificoo.
+        </article>
     );
 };
 

@@ -6,3 +6,5 @@ npm-debug.*
 yarn-error.log
 
 .DS_Store
+
+__snapshots__/
