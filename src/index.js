@@ -1,1 +1,1 @@
-console.log("Create React App");
+console.log("Create React App.");
