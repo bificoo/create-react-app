@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 
 const devMode = process.env.NODE_ENV !== "production";
@@ -18,6 +19,35 @@ module.exports = {
                 include: [path.resolve(__dirname, "src")],
                 exclude: /node_modules/,
                 loader: "babel-loader"
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    MiniCssExtractPlugin.loader, 
+                    "css-loader", 
+                    "postcss-loader"
+                ]
+            },
+            {
+                test: /\.sass$/,
+                use: [{
+                    loader: MiniCssExtractPlugin.loader
+                }, {
+                    loader: "css-loader",
+                    options: {
+                        sourceMap: true
+                    }
+                }, {
+                    loader: "postcss-loader",
+                    options: {
+                        sourceMap: true
+                    }
+                }, {
+                    loader: "sass-loader",
+                    options: {
+                        sourceMap: true
+                    }
+                }]
             },
         ]
     },
@@ -39,5 +69,8 @@ module.exports = {
             hash: true,
             cache: false,
         }),
+        new MiniCssExtractPlugin({
+            filename: devMode ? "assets/styles/main.css" : "assets/styles/main.[hash].css"
+        })
     ],
 };

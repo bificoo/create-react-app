@@ -30,4 +30,12 @@ yarn build
 
 #### React
 * [react](https://www.npmjs.com/package/react)：js框架。
-* [react-dom](https://www.npmjs.com/package/react-dom)：負責把 react DOM 加入網頁。
+* [react-dom](https://www.npmjs.com/package/react-dom)：負責把react DOM加入網頁。
+
+#### Style
+* [css-loader](https://www.npmjs.com/package/css-loader)：css預處理器。
+* [postcss-loader](https://www.npmjs.com/package/postcss-loader)：轉譯css。
+* [autoprefixer](https://www.npmjs.com/package/autoprefixer)：postcss套件，將樣式補上跨瀏覽器語法。
+* [sass-loader](https://www.npmjs.com/package/sass-loader)：轉譯sass。
+* [node-sass](https://www.npmjs.com/package/node-sass)：sass api。
+* [mini-css-extract-plugin](https://www.npmjs.com/package/mini-css-extract-plugin)：webpack4才能用，將樣式抽離獨立。
